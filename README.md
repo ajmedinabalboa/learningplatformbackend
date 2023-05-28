@@ -26,6 +26,7 @@ CREATE DATABASE "LearningPlatform"
 
 2.- Create Table "Categories"
 
+```
 -- Table: public.Categories
 
 -- DROP TABLE IF EXISTS public."Categories";
@@ -41,9 +42,11 @@ TABLESPACE pg_default;
 
 ALTER TABLE IF EXISTS public."Categories"
     OWNER to postgres;
+```
     
 3.- Create Table "Courses"
 
+```
 -- Table: public.Courses
 
 -- DROP TABLE IF EXISTS public."Courses";
@@ -71,9 +74,11 @@ TABLESPACE pg_default;
 
 ALTER TABLE IF EXISTS public."Courses"
     OWNER to postgres;
+```
 
 4.- Create Table "Enrollments"
 
+```
 -- Table: public.Enrollments
 
 -- DROP TABLE IF EXISTS public."Enrollments";
@@ -98,9 +103,11 @@ TABLESPACE pg_default;
 
 ALTER TABLE IF EXISTS public."Enrollments"
     OWNER to postgres;
-    
+```
+
 5.- Create Table "Students"
 
+```
 -- Table: public.Students
 
 -- DROP TABLE IF EXISTS public."Students";
@@ -127,9 +134,11 @@ TABLESPACE pg_default;
 
 ALTER TABLE IF EXISTS public."Students"
     OWNER to postgres;
-    
+```
+
 6.- Insert Data into "Categories" Table using script
 
+```
 INSERT INTO public."Categories" ("idCategory", "categoryDescription") OVERRIDING SYSTEM VALUE VALUES (1, 'Mobile App Development');
 INSERT INTO public."Categories" ("idCategory", "categoryDescription") OVERRIDING SYSTEM VALUE VALUES (2, 'Web Programming/Web Design');
 INSERT INTO public."Categories" ("idCategory", "categoryDescription") OVERRIDING SYSTEM VALUE VALUES (3, 'Artificial Intelligence');
@@ -139,9 +148,11 @@ INSERT INTO public."Categories" ("idCategory", "categoryDescription") OVERRIDING
 INSERT INTO public."Categories" ("idCategory", "categoryDescription") OVERRIDING SYSTEM VALUE VALUES (8, 'Cyber Security');
 INSERT INTO public."Categories" ("idCategory", "categoryDescription") OVERRIDING SYSTEM VALUE VALUES (9, 'Software Quality Testing');
 INSERT INTO public."Categories" ("idCategory", "categoryDescription") OVERRIDING SYSTEM VALUE VALUES (7, 'Programming');
+```
 
 7.- Insert Data into "Courses" Table using script
 
+```
 INSERT INTO public."Courses" ("idCourse", "idCategory", "courseDescription", abstract, author, "startDate", "endDate", rate, attendance, "totalHours") OVERRIDING SYSTEM VALUE VALUES (6, 1, 'Android Layout Fundamentals', 'Understand the basic Android layout classes, and how to use them effectively.', 'Alvaro Javier Medina Balboa', '2023-05-23 20:11:01.86574', '2023-06-23 20:11:01.86574', '4.5', 422, '3:20hs');
 INSERT INTO public."Courses" ("idCourse", "idCategory", "courseDescription", abstract, author, "startDate", "endDate", rate, attendance, "totalHours") OVERRIDING SYSTEM VALUE VALUES (1, 1, 'Android: Room Fundamentals', 'Dealing with local storage of data in an extendable way has always been a challenge, but Google has introduced a new option: Room. You will learn how to deal with the database for local storage in an easy way without hampering the user experience.', 'Alvaro Javier Medina Balboa', '2023-05-23 20:11:01.86574', '2023-05-23 20:11:01.86574', '4.5', 422, '3:20hs');
 INSERT INTO public."Courses" ("idCourse", "idCategory", "courseDescription", abstract, author, "startDate", "endDate", rate, attendance, "totalHours") OVERRIDING SYSTEM VALUE VALUES (2, 1, 'Flutter 2: The Big Picture', 'This course is an overview of the Flutter framework. You will find best practices and tips for developers and designers. You will also find tools to get a head start in case you decide to use Flutter in your professional life.', 'Alvaro Javier Medina Balboa', '2023-05-23 20:11:01.86574', '2023-05-23 20:11:01.86574', '4.5', 422, '3:20hs');
@@ -173,6 +184,7 @@ INSERT INTO public."Courses" ("idCourse", "idCategory", "courseDescription", abs
 INSERT INTO public."Courses" ("idCourse", "idCategory", "courseDescription", abstract, author, "startDate", "endDate", rate, attendance, "totalHours") OVERRIDING SYSTEM VALUE VALUES (29, 7, 'Spring Framework: Spring 5 Fundamentals', 'This course is designed to give you a solid foundation of the fundamentals of the Spring Framework. It covers how to get started as well as advanced configuration techniques with Spring using the most recent versions.', 'Alvaro Javier Medina Balboa', '2023-05-23 20:11:01.86574', '2023-06-23 20:11:01.86574', '4.5', 422, '3:20hs');
 INSERT INTO public."Courses" ("idCourse", "idCategory", "courseDescription", abstract, author, "startDate", "endDate", rate, attendance, "totalHours") OVERRIDING SYSTEM VALUE VALUES (30, 8, 'Security Principles for CCsm', 'This course will teach you security concepts of information protection and assurance needed for the Certified in Cybersecurity Exam.', 'Alvaro Javier Medina Balboa', '2023-05-23 20:11:01.86574', '2023-06-23 20:11:01.86574', '4.5', 422, '3:20hs');
 INSERT INTO public."Courses" ("idCourse", "idCategory", "courseDescription", abstract, author, "startDate", "endDate", rate, attendance, "totalHours") OVERRIDING SYSTEM VALUE VALUES (31, 9, 'Getting Started with UI Testing and Appium 1', 'This course you will teach you how to write UI Test automation in the programming language you like for applications on iOS, Android, Mac, and Windows including UWP, WPF, and Windows Forms applications using the open source tool Appium', 'Alvaro Javier Medina Balboa', '2023-05-23 20:11:01.86574', '2023-06-23 20:11:01.86574', '4.5', 422, '3:20hs');
+```
 
 # JAVA SPRING BOOT Configuration
 - Change the password for the "application.properties" file to the admin password configure during PostgreSql installation.
