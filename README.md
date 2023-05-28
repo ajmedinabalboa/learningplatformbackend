@@ -7,10 +7,12 @@ Current project use PostgreSQL 15.2
 attach the sql sequence in order to create Tables and insert the Courses and categories
 
 ![image](https://github.com/ajmedinabalboa/learningplatformbackend/assets/132222019/cbce615a-3071-443e-9d84-408bb1b77312)
+
 Only use 4 tables Categories, Courses, Enrollments and Students
 
 1.- Create the DataBase "Learning Platform" using script:
 
+```
 CREATE DATABASE "LearningPlatform"
     WITH
     OWNER = postgres
@@ -20,7 +22,8 @@ CREATE DATABASE "LearningPlatform"
     TABLESPACE = pg_default
     CONNECTION LIMIT = -1
     IS_TEMPLATE = False;
-    
+```
+
 2.- Create Table "Categories"
 
 -- Table: public.Categories
